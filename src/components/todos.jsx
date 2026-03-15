@@ -31,7 +31,7 @@ export default function Todo() {
                 <ul className="task-list">
                     {
                         todos.map((todo) => (
-                            <li id="" key={todo.id} style = {todo.isDone? {textDecoration: "line-through"}: {}}>
+                            <li key={todo.id} style = {todo.isDone? {textDecoration: "line-through"}: {}}>
 
                                 {todo.task}
 

@@ -2,7 +2,7 @@ import {useState} from "react";
 import {useDispatch} from "react-redux"; // note its importing from react-redux not toolkit 
 import { addTodo } from "../features/todo/todoSlice";
 
-export default function addForm(){
+export default function AddForm(){
 
     const [task, setTask] = useState("");
     const dispatch = useDispatch();
@@ -20,6 +20,7 @@ export default function addForm(){
                 <input 
                     type="text"
                     onChange={(e) => setTask(e.target.value)}
+                    value={task}
                 > </input>
 
                 <button> Add Task </button>
