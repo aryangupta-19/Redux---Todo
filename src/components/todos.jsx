@@ -5,7 +5,9 @@ import { deleteTodo } from "../features/todo/todoSlice";
 import { markAsDone } from "../features/todo/todoSlice";
 
 export default function Todo() {
-    const todos = useSelector((state) => state.todos);
+    // const todos = useSelector((state) => state.todos);
+    const todos = useSelector((state) => state.todo.todos);
+    console.log("todos:", todos);
     const dispatch = useDispatch();
     // console.log(todos);
 

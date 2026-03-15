@@ -2,8 +2,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import todoReducer from "../features/todo/todoSlice";
 
-export const store = configureStore({ // return us our object/store which will be stored in a variable store-> whenever a new store created pass reducers to it 
-    reducer: todoReducer,
+// app/store.js
+export const store = configureStore({
+    reducer: {
+        todo: todoReducer, // This 'todo' key is what we need to reference
+    },
 });
 
 // till now no reducer therefore store some empty object 

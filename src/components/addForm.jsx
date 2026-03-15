@@ -17,12 +17,7 @@ export default function AddForm(){
     return(
         <>
             <form onSubmit={submitHandler}>
-                <input 
-                    type="text"
-                    onChange={(e) => setTask(e.target.value)}
-                    value={task}
-                > </input>
-
+                <input type="text" value={task} onChange={(e) => setTask(e.target.value)}/>
                 <button> Add Task </button>
             </form>
         </>
