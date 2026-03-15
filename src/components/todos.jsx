@@ -33,17 +33,14 @@ export default function Todo() {
                 <ul className="task-list">
                     {
                         todos.map((todo) => (
-                            <li key={todo.id} style = {todo.isDone? {textDecoration: "line-through"}: {}}>
+                                                        
+                            <li key={todo.id} className="task-item">
+                            <span className="task-text">{todo.task}</span>
 
-                                {todo.task}
-
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-
+                            <div className="btn-group">
                                 <button onClick={() => handleDelete(todo.id)}>Delete</button>
-                                
-                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-
-                                <button onClick = {() => handleMarking(todo.id)}> Mark As Done </button>
+                                <button onClick={() => handleMarking(todo.id)}>Mark Done</button>
+                            </div>
                             </li>
                         ))
                     }
