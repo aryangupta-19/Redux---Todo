@@ -34,7 +34,7 @@ export default function Todo() {
                     {
                         todos.map((todo) => (
                                                         
-                            <li key={todo.id} className="task-item">
+                            <li key={todo.id} className="task-item"  style={todo.isDone ? {textDecoration:"line-through"} : {}}>
                             <span className="task-text">{todo.task}</span>
 
                             <div className="btn-group">
