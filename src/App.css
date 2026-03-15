@@ -1,0 +1,24 @@
+body{
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#root{
+  justify-content: center;
+}
+
+.task-list{
+  color: rgb(236, 23, 59);
+
+}
+
+.list-container{
+  background-color: rgb(9, 2, 55);
+  height: 40%;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 14px;
+  padding: 10px 0px 30px 0;
+}
