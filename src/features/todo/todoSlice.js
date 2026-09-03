@@ -27,7 +27,7 @@ export const todoSlice = createSlice({
                 if(todo.id === action.payload){
                     todo.isDone = true;
                 }
-                return todo;
+                return todo;    // each todo have its own actions
             }); 
         },
     },

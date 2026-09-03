@@ -6,7 +6,7 @@ import { markAsDone } from "../features/todo/todoSlice";
 
 export default function Todo() {
     // const todos = useSelector((state) => state.todos);
-    const todos = useSelector((state) => state.todo.todos);
+    const todos = useSelector((state) => state.todo.todos); // inr reducer stored as todo: todoReducer 
     console.log("todos:", todos);
     const dispatch = useDispatch();
     // console.log(todos);
@@ -50,3 +50,7 @@ export default function Todo() {
         </>
     );
 }
+
+
+// noe we used call back in handler calling when we want to send props 
+// dispatch Action -> triggering the state (such that our state gets changed).
